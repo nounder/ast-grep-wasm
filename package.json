@@ -1,0 +1,34 @@
+{
+  "name": "ast-grep-wasm",
+  "type": "module",
+  "collaborators": [
+    "HerringtonDarkholme <2883231+HerringtonDarkholme@users.noreply.github.com>"
+  ],
+  "description": "Search and Rewrite code at large scale using precise AST pattern",
+  "version": "0.38.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ast-grep/ast-grep"
+  },
+  "files": [
+    "ast_grep_wasm_bg.wasm",
+    "ast_grep_wasm.js",
+    "ast_grep_wasm.d.ts"
+  ],
+  "main": "ast_grep_wasm.js",
+  "types": "ast_grep_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ],
+  "keywords": [
+    "ast",
+    "pattern",
+    "codemod",
+    "search",
+    "rewrite"
+  ],
+  "dependencies": {
+    "web-tree-sitter": "0.25.3"
+  }
+}
